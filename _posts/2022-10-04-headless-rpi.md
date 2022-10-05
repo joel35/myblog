@@ -48,5 +48,4 @@ Errors generated in log file:
     X -configure
     nano /var/log/Xorg.1.log
 
-The answer may be in this [log file](/assets/logs/Xorg.1.log).
-
+The answer may be in this [log file](assets/logs/Xorg.1.log).

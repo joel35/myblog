@@ -1,0 +1,1 @@
+[![Deploy Jekyll site to Pages](https://github.com/joel35/myblog/actions/workflows/pages.yml/badge.svg)](https://github.com/joel35/myblog/actions/workflows/pages.yml)

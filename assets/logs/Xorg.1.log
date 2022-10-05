@@ -1,0 +1,399 @@
+[  4062.383] 
+X.Org X Server 1.20.11
+X Protocol Version 11, Revision 0
+[  4062.386] Build Operating System: linux Debian
+[  4062.387] Current Operating System: Linux rpi-dev-2 5.15.61-v8+ #1579 SMP PREEMPT Fri Aug 26 11:16:44 BST 2022 aarch64
+[  4062.387] Kernel command line: coherent_pool=1M 8250.nr_uarts=1 snd_bcm2835.enable_compat_alsa=0 snd_bcm2835.enable_hdmi=1 video=HDMI-A-1:848x480M@60 smsc95xx.macaddr=DC:A6:32:E1:57:17 vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  console=ttyS0,115200 console=tty1 root=PARTUUID=871853a0-02 rootfstype=ext4 fsck.repair=yes rootwait
+[  4062.392] Build Date: 08 August 2022  07:20:04AM
+[  4062.393] xorg-server 2:1.20.11-1+rpt1+deb11u2 (https://www.debian.org/support) 
+[  4062.394] Current version of pixman: 0.40.0
+[  4062.396] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[  4062.396] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[  4062.400] (==) Log file: "/var/log/Xorg.1.log", Time: Wed Oct  5 10:41:43 2022
+[  4062.401] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  4062.402] (==) No Layout section.  Using the first Screen section.
+[  4062.402] (==) No screen section available. Using defaults.
+[  4062.402] (**) |-->Screen "Default Screen Section" (0)
+[  4062.402] (**) |   |-->Monitor "<default monitor>"
+[  4062.403] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[  4062.403] (**) Option "Debug" "dmabuf_capable"
+[  4062.403] (==) Automatically adding devices
+[  4062.403] (==) Automatically enabling devices
+[  4062.403] (==) Automatically adding GPU devices
+[  4062.403] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  4062.403] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[  4062.403] 	Entry deleted from font path.
+[  4062.403] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[  4062.403] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  4062.403] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[  4062.403] (II) Loader magic: 0x5572d7ee28
+[  4062.403] (II) Module ABI versions:
+[  4062.403] 	X.Org ANSI C Emulation: 0.4
+[  4062.403] 	X.Org Video Driver: 24.1
+[  4062.403] 	X.Org XInput driver : 24.1
+[  4062.403] 	X.Org Server Extension : 10.0
+[  4062.406] (++) using VT number 1
+
+[  4062.411] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[  4062.415] (II) xfree86: Adding drm device (/dev/dri/card1)
+[  4062.417] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 11 paused 0
+[  4062.418] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  4062.420] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 12 paused 0
+[  4062.422] (II) no primary bus or device found
+[  4062.422] 	falling back to /sys/devices/platform/gpu/drm/card1
+[  4062.422] (II) LoadModule: "glx"
+[  4062.423] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  4062.426] (II) Module glx: vendor="X.Org Foundation"
+[  4062.426] 	compiled for 1.20.11, module version = 1.0.0
+[  4062.426] 	ABI class: X.Org Server Extension, version 10.0
+[  4062.426] (==) Matched modesetting as autoconfigured driver 0
+[  4062.426] (==) Matched fbdev as autoconfigured driver 1
+[  4062.426] (==) Assigned the driver to the xf86ConfigLayout
+[  4062.426] (II) LoadModule: "modesetting"
+[  4062.426] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  4062.427] (II) Module modesetting: vendor="X.Org Foundation"
+[  4062.427] 	compiled for 1.20.11, module version = 1.20.11
+[  4062.427] 	Module class: X.Org Video Driver
+[  4062.427] 	ABI class: X.Org Video Driver, version 24.1
+[  4062.427] (II) LoadModule: "fbdev"
+[  4062.427] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[  4062.428] (II) Module fbdev: vendor="X.Org Foundation"
+[  4062.428] 	compiled for 1.20.0, module version = 0.5.0
+[  4062.429] 	Module class: X.Org Video Driver
+[  4062.429] 	ABI class: X.Org Video Driver, version 24.0
+[  4062.429] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  4062.429] (II) FBDEV: driver for framebuffer: fbdev
+[  4062.430] (II) modeset(0): using drv /dev/dri/card1
+[  4062.430] (WW) Falling back to old probe method for fbdev
+[  4062.430] (II) Loading sub module "fbdevhw"
+[  4062.430] (II) LoadModule: "fbdevhw"
+[  4062.431] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[  4062.431] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  4062.431] 	compiled for 1.20.11, module version = 0.0.2
+[  4062.431] 	ABI class: X.Org Video Driver, version 24.1
+[  4062.431] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[  4062.431] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[  4062.432] (==) modeset(0): RGB weight 888
+[  4062.432] (==) modeset(0): Default visual is TrueColor
+[  4062.432] (II) Loading sub module "glamoregl"
+[  4062.432] (II) LoadModule: "glamoregl"
+[  4062.432] (II) Loading /usr/lib/xorg/modules/libglamoregl.so
+[  4062.445] (II) Module glamoregl: vendor="X.Org Foundation"
+[  4062.445] 	compiled for 1.20.11, module version = 1.0.1
+[  4062.445] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  4062.912] (II) modeset(0): glamor X acceleration enabled on V3D 4.2
+[  4062.912] (II) modeset(0): glamor initialized
+[  4062.925] (II) modeset(0): Output HDMI-1 has no monitor section
+[  4062.925] (II) modeset(0): Output HDMI-2 has no monitor section
+[  4062.948] (II) modeset(0): EDID for output HDMI-1
+[  4062.948] (II) modeset(0): Manufacturer: NHD  Model: 431  Serial#: 0
+[  4062.948] (II) modeset(0): Year: 2020  Week: 255
+[  4062.948] (II) modeset(0): EDID Version: 1.4
+[  4062.948] (II) modeset(0): Digital Display Input
+[  4062.948] (II) modeset(0): Undefined color depth
+[  4062.948] (II) modeset(0): Digital interface is undefined
+[  4062.948] (II) modeset(0): Max Image Size [cm]: horiz.: 10  vert.: 7
+[  4062.948] (II) modeset(0): Gamma: 1.00
+[  4062.948] (II) modeset(0): No DPMS capabilities specified
+[  4062.948] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 YCrCb 4:2:2
+[  4062.948] (II) modeset(0): First detailed timing is preferred mode
+[  4062.948] (II) modeset(0): Preferred mode is native pixel format and refresh rate
+[  4062.948] (II) modeset(0): redX: 0.000 redY: 0.000   greenX: 0.000 greenY: 0.000
+[  4062.948] (II) modeset(0): blueX: 0.000 blueY: 0.000   whiteX: 0.000 whiteY: 0.000
+[  4062.948] (II) modeset(0): Manufacturer's mask: 0
+[  4062.948] (II) modeset(0): Supported detailed timing:
+[  4062.948] (II) modeset(0): clock: 32.0 MHz   Image Size:  105 x 67 mm
+[  4062.948] (II) modeset(0): h_active: 800  h_sync: 840  h_sync_end 888 h_blank_end 928 h_border: 0
+[  4062.948] (II) modeset(0): v_active: 480  v_sync: 493  v_sync_end 494 v_blanking: 525 v_border: 0
+[  4062.948] (II) modeset(0): Monitor name: NHD-4.3-HDMI
+[  4062.948] (II) modeset(0): EDID (in hex):
+[  4062.948] (II) modeset(0): 	00ffffffffffff003904310400000000
+[  4062.948] (II) modeset(0): 	ff1e0104800a07001a00000000000000
+[  4062.948] (II) modeset(0): 	00000000000001000100010001000100
+[  4062.949] (II) modeset(0): 	010001000100800c208030e02d102830
+[  4062.949] (II) modeset(0): 	d100694300000018000000fc004e4844
+[  4062.949] (II) modeset(0): 	2d342e332d48444d490a000000100000
+[  4062.949] (II) modeset(0): 	00000000000000000000000000000010
+[  4062.949] (II) modeset(0): 	00000000000000000000000000000048
+[  4062.949] (II) modeset(0): Printing probed modes for output HDMI-1
+[  4062.949] (II) modeset(0): Modeline "800x480"x65.7   32.00  800 840 888 928  480 493 494 525 -hsync -vsync (34.5 kHz eP)
+[  4062.949] (II) modeset(0): Modeline "848x480"x59.9   31.65  848 872 952 1056  480 483 493 500 -hsync +vsync (30.0 kHz)
+[  4062.949] (II) modeset(0): EDID for output HDMI-2
+[  4062.949] (II) modeset(0): Output HDMI-1 connected
+[  4062.949] (II) modeset(0): Output HDMI-2 disconnected
+[  4062.949] (II) modeset(0): Using exact sizes for initial modes
+[  4062.949] (II) modeset(0): Output HDMI-1 using initial mode 800x480 +0+0
+[  4062.949] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[  4062.949] (==) modeset(0): DPI set to (96, 96)
+[  4062.949] (II) Loading sub module "fb"
+[  4062.949] (II) LoadModule: "fb"
+[  4062.949] (II) Loading /usr/lib/xorg/modules/libfb.so
+[  4062.950] (II) Module fb: vendor="X.Org Foundation"
+[  4062.950] 	compiled for 1.20.11, module version = 1.0.0
+[  4062.950] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  4062.950] (II) UnloadModule: "fbdev"
+[  4062.950] (II) Unloading fbdev
+[  4062.950] (II) UnloadSubModule: "fbdevhw"
+[  4062.950] (II) Unloading fbdevhw
+[  4063.008] (==) modeset(0): Backing store enabled
+[  4063.008] (==) modeset(0): Silken mouse enabled
+[  4063.148] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[  4063.148] (==) modeset(0): DPMS enabled
+[  4063.148] (II) modeset(0): [DRI2] Setup complete
+[  4063.148] (II) modeset(0): [DRI2]   DRI driver: vc4
+[  4063.148] (II) modeset(0): [DRI2]   VDPAU driver: vc4
+[  4063.149] (II) Initializing extension Generic Event Extension
+[  4063.149] (II) Initializing extension SHAPE
+[  4063.149] (II) Initializing extension MIT-SHM
+[  4063.149] (II) Initializing extension XInputExtension
+[  4063.150] (II) Initializing extension XTEST
+[  4063.150] (II) Initializing extension BIG-REQUESTS
+[  4063.150] (II) Initializing extension SYNC
+[  4063.151] (II) Initializing extension XKEYBOARD
+[  4063.151] (II) Initializing extension XC-MISC
+[  4063.151] (II) Initializing extension SECURITY
+[  4063.152] (II) Initializing extension XFIXES
+[  4063.152] (II) Initializing extension RENDER
+[  4063.152] (II) Initializing extension RANDR
+[  4063.153] (II) Initializing extension COMPOSITE
+[  4063.153] (II) Initializing extension DAMAGE
+[  4063.154] (II) Initializing extension MIT-SCREEN-SAVER
+[  4063.155] (II) Initializing extension DOUBLE-BUFFER
+[  4063.155] (II) Initializing extension RECORD
+[  4063.155] (II) Initializing extension DPMS
+[  4063.156] (II) Initializing extension Present
+[  4063.156] (II) Initializing extension DRI3
+[  4063.156] (II) Initializing extension X-Resource
+[  4063.156] (II) Initializing extension XVideo
+[  4063.157] (II) Initializing extension XVideo-MotionCompensation
+[  4063.157] (II) Initializing extension SELinux
+[  4063.157] (II) SELinux: Disabled on system
+[  4063.157] (II) Initializing extension GLX
+[  4063.501] (II) AIGLX: Loaded and initialized vc4
+[  4063.501] (II) GLX: Initialized DRI2 GL provider for screen 0
+[  4063.501] (II) Initializing extension XFree86-VidModeExtension
+[  4063.501] (II) Initializing extension XFree86-DGA
+[  4063.502] (II) Initializing extension XFree86-DRI
+[  4063.502] (II) Initializing extension DRI2
+[  4063.504] (II) modeset(0): Damage tracking initialized
+[  4063.504] (II) modeset(0): Setting screen physical size to 211 x 127
+[  4063.603] (II) config/udev: Adding input device Logitech G203 LIGHTSYNC Gaming Mouse (/dev/input/event5)
+[  4063.603] (**) Logitech G203 LIGHTSYNC Gaming Mouse: Applying InputClass "libinput pointer catchall"
+[  4063.603] (II) LoadModule: "libinput"
+[  4063.603] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  4063.606] (II) Module libinput: vendor="X.Org Foundation"
+[  4063.606] 	compiled for 1.20.8, module version = 0.30.0
+[  4063.606] 	Module class: X.Org XInput Driver
+[  4063.606] 	ABI class: X.Org XInput driver, version 24.1
+[  4063.606] (II) Using input driver 'libinput' for 'Logitech G203 LIGHTSYNC Gaming Mouse'
+[  4063.668] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 26 paused 0
+[  4063.668] (**) Logitech G203 LIGHTSYNC Gaming Mouse: always reports core events
+[  4063.668] (**) Option "Device" "/dev/input/event5"
+[  4063.669] (**) Option "_source" "server/udev"
+[  4063.676] (II) event5  - Logitech G203 LIGHTSYNC Gaming Mouse: is tagged by udev as: Mouse
+[  4063.676] (II) event5  - Logitech G203 LIGHTSYNC Gaming Mouse: device is a pointer
+[  4063.677] (II) event5  - Logitech G203 LIGHTSYNC Gaming Mouse: device removed
+[  4063.677] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.0/0003:046D:C092.0003/input/input6/event5"
+[  4063.677] (II) XINPUT: Adding extended input device "Logitech G203 LIGHTSYNC Gaming Mouse" (type: MOUSE, id 6)
+[  4063.677] (**) Option "AccelerationScheme" "none"
+[  4063.677] (**) Logitech G203 LIGHTSYNC Gaming Mouse: (accel) selected scheme none/0
+[  4063.677] (**) Logitech G203 LIGHTSYNC Gaming Mouse: (accel) acceleration factor: 2.000
+[  4063.677] (**) Logitech G203 LIGHTSYNC Gaming Mouse: (accel) acceleration threshold: 4
+[  4063.683] (II) event5  - Logitech G203 LIGHTSYNC Gaming Mouse: is tagged by udev as: Mouse
+[  4063.683] (II) event5  - Logitech G203 LIGHTSYNC Gaming Mouse: device is a pointer
+[  4063.686] (II) config/udev: Adding input device Logitech G203 LIGHTSYNC Gaming Mouse (/dev/input/mouse0)
+[  4063.686] (II) No input driver specified, ignoring this device.
+[  4063.686] (II) This device may have been added with another device file.
+[  4063.690] (II) config/udev: Adding input device Logitech G203 LIGHTSYNC Gaming Mouse Keyboard (/dev/input/event6)
+[  4063.690] (**) Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: Applying InputClass "libinput keyboard catchall"
+[  4063.690] (II) Using input driver 'libinput' for 'Logitech G203 LIGHTSYNC Gaming Mouse Keyboard'
+[  4063.692] (II) systemd-logind: got fd for /dev/input/event6 13:70 fd 29 paused 0
+[  4063.692] (**) Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: always reports core events
+[  4063.692] (**) Option "Device" "/dev/input/event6"
+[  4063.692] (**) Option "_source" "server/udev"
+[  4063.698] (II) event6  - Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: is tagged by udev as: Keyboard
+[  4063.698] (II) event6  - Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: device is a keyboard
+[  4063.698] (II) event6  - Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: device removed
+[  4063.698] (II) libinput: Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: needs a virtual subdevice
+[  4063.699] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:046D:C092.0004/input/input7/event6"
+[  4063.699] (II) XINPUT: Adding extended input device "Logitech G203 LIGHTSYNC Gaming Mouse Keyboard" (type: MOUSE, id 7)
+[  4063.699] (**) Option "AccelerationScheme" "none"
+[  4063.699] (**) Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: (accel) selected scheme none/0
+[  4063.699] (**) Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: (accel) acceleration factor: 2.000
+[  4063.699] (**) Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: (accel) acceleration threshold: 4
+[  4063.704] (II) event6  - Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: is tagged by udev as: Keyboard
+[  4063.704] (II) event6  - Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: device is a keyboard
+[  4063.708] (II) config/udev: Adding input device Dell KB216 Wired Keyboard (/dev/input/event0)
+[  4063.708] (**) Dell KB216 Wired Keyboard: Applying InputClass "libinput keyboard catchall"
+[  4063.708] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard'
+[  4063.710] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 30 paused 0
+[  4063.710] (**) Dell KB216 Wired Keyboard: always reports core events
+[  4063.710] (**) Option "Device" "/dev/input/event0"
+[  4063.710] (**) Option "_source" "server/udev"
+[  4063.717] (II) event0  - Dell KB216 Wired Keyboard: is tagged by udev as: Keyboard
+[  4063.717] (II) event0  - Dell KB216 Wired Keyboard: device is a keyboard
+[  4063.718] (II) event0  - Dell KB216 Wired Keyboard: device removed
+[  4063.718] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.4/1-1.4:1.0/0003:413C:2113.0001/input/input0/event0"
+[  4063.718] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard" (type: KEYBOARD, id 8)
+[  4063.718] (**) Option "xkb_model" "pc105"
+[  4063.718] (**) Option "xkb_layout" "gb"
+[  4063.754] (II) event0  - Dell KB216 Wired Keyboard: is tagged by udev as: Keyboard
+[  4063.754] (II) event0  - Dell KB216 Wired Keyboard: device is a keyboard
+[  4063.758] (II) config/udev: Adding input device Dell KB216 Wired Keyboard System Control (/dev/input/event1)
+[  4063.758] (**) Dell KB216 Wired Keyboard System Control: Applying InputClass "libinput keyboard catchall"
+[  4063.758] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard System Control'
+[  4063.760] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 31 paused 0
+[  4063.760] (**) Dell KB216 Wired Keyboard System Control: always reports core events
+[  4063.760] (**) Option "Device" "/dev/input/event1"
+[  4063.760] (**) Option "_source" "server/udev"
+[  4063.766] (II) event1  - Dell KB216 Wired Keyboard System Control: is tagged by udev as: Keyboard
+[  4063.767] (II) event1  - Dell KB216 Wired Keyboard System Control: device is a keyboard
+[  4063.767] (II) event1  - Dell KB216 Wired Keyboard System Control: device removed
+[  4063.767] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.4/1-1.4:1.1/0003:413C:2113.0002/input/input1/event1"
+[  4063.767] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard System Control" (type: KEYBOARD, id 9)
+[  4063.767] (**) Option "xkb_model" "pc105"
+[  4063.767] (**) Option "xkb_layout" "gb"
+[  4063.773] (II) event1  - Dell KB216 Wired Keyboard System Control: is tagged by udev as: Keyboard
+[  4063.773] (II) event1  - Dell KB216 Wired Keyboard System Control: device is a keyboard
+[  4063.777] (II) config/udev: Adding input device Dell KB216 Wired Keyboard Consumer Control (/dev/input/event2)
+[  4063.777] (**) Dell KB216 Wired Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  4063.778] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard Consumer Control'
+[  4063.779] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 32 paused 0
+[  4063.779] (**) Dell KB216 Wired Keyboard Consumer Control: always reports core events
+[  4063.779] (**) Option "Device" "/dev/input/event2"
+[  4063.779] (**) Option "_source" "server/udev"
+[  4063.786] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: is tagged by udev as: Keyboard
+[  4063.786] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device is a keyboard
+[  4063.786] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device removed
+[  4063.786] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.4/1-1.4:1.1/0003:413C:2113.0002/input/input2/event2"
+[  4063.786] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard Consumer Control" (type: KEYBOARD, id 10)
+[  4063.786] (**) Option "xkb_model" "pc105"
+[  4063.786] (**) Option "xkb_layout" "gb"
+[  4063.793] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: is tagged by udev as: Keyboard
+[  4063.793] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device is a keyboard
+[  4063.796] (II) config/udev: Adding input device vc4 (/dev/input/event3)
+[  4063.796] (**) vc4: Applying InputClass "libinput keyboard catchall"
+[  4063.796] (II) Using input driver 'libinput' for 'vc4'
+[  4063.798] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 33 paused 0
+[  4063.798] (**) vc4: always reports core events
+[  4063.798] (**) Option "Device" "/dev/input/event3"
+[  4063.798] (**) Option "_source" "server/udev"
+[  4063.802] (II) event3  - vc4: is tagged by udev as: Keyboard Pointingstick
+[  4063.802] (II) event3  - vc4: device is a pointer
+[  4063.802] (II) event3  - vc4: device is a keyboard
+[  4063.803] (II) event3  - vc4: device removed
+[  4063.803] (II) libinput: vc4: needs a virtual subdevice
+[  4063.803] (**) Option "config_info" "udev:/sys/devices/platform/soc/fef00700.hdmi/rc/rc0/input4/event3"
+[  4063.803] (II) XINPUT: Adding extended input device "vc4" (type: MOUSE, id 11)
+[  4063.805] (**) Option "AccelerationScheme" "none"
+[  4063.805] (**) vc4: (accel) selected scheme none/0
+[  4063.805] (**) vc4: (accel) acceleration factor: 2.000
+[  4063.805] (**) vc4: (accel) acceleration threshold: 4
+[  4063.808] (II) event3  - vc4: is tagged by udev as: Keyboard Pointingstick
+[  4063.809] (II) event3  - vc4: device is a pointer
+[  4063.809] (II) event3  - vc4: device is a keyboard
+[  4063.811] (II) config/udev: Adding input device vc4 (/dev/input/event4)
+[  4063.811] (**) vc4: Applying InputClass "libinput keyboard catchall"
+[  4063.811] (II) Using input driver 'libinput' for 'vc4'
+[  4063.813] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 34 paused 0
+[  4063.813] (**) vc4: always reports core events
+[  4063.814] (**) Option "Device" "/dev/input/event4"
+[  4063.814] (**) Option "_source" "server/udev"
+[  4063.817] (II) event4  - vc4: is tagged by udev as: Keyboard Pointingstick
+[  4063.817] (II) event4  - vc4: device is a pointer
+[  4063.817] (II) event4  - vc4: device is a keyboard
+[  4063.819] (II) event4  - vc4: device removed
+[  4063.819] (II) libinput: vc4: needs a virtual subdevice
+[  4063.819] (**) Option "config_info" "udev:/sys/devices/platform/soc/fef05700.hdmi/rc/rc1/input5/event4"
+[  4063.819] (II) XINPUT: Adding extended input device "vc4" (type: MOUSE, id 12)
+[  4063.819] (**) Option "AccelerationScheme" "none"
+[  4063.819] (**) vc4: (accel) selected scheme none/0
+[  4063.820] (**) vc4: (accel) acceleration factor: 2.000
+[  4063.820] (**) vc4: (accel) acceleration threshold: 4
+[  4063.824] (II) event4  - vc4: is tagged by udev as: Keyboard Pointingstick
+[  4063.824] (II) event4  - vc4: device is a pointer
+[  4063.824] (II) event4  - vc4: device is a keyboard
+[  4063.853] (**) Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: Applying InputClass "libinput keyboard catchall"
+[  4063.853] (II) Using input driver 'libinput' for 'Logitech G203 LIGHTSYNC Gaming Mouse Keyboard'
+[  4063.853] (II) systemd-logind: returning pre-existing fd for /dev/input/event6 13:70
+[  4063.853] (**) Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: always reports core events
+[  4063.853] (**) Option "Device" "/dev/input/event6"
+[  4063.853] (**) Option "_source" "_driver/libinput"
+[  4063.853] (II) libinput: Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: is a virtual subdevice
+[  4063.854] (**) Option "config_info" "udev:/sys/devices/platform/scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.1/1-1.1:1.1/0003:046D:C092.0004/input/input7/event6"
+[  4063.854] (II) XINPUT: Adding extended input device "Logitech G203 LIGHTSYNC Gaming Mouse Keyboard" (type: KEYBOARD, id 13)
+[  4063.854] (**) Option "xkb_model" "pc105"
+[  4063.854] (**) Option "xkb_layout" "gb"
+[  4063.854] (**) vc4: Applying InputClass "libinput keyboard catchall"
+[  4063.854] (II) Using input driver 'libinput' for 'vc4'
+[  4063.854] (II) systemd-logind: returning pre-existing fd for /dev/input/event3 13:67
+[  4063.854] (**) vc4: always reports core events
+[  4063.854] (**) Option "Device" "/dev/input/event3"
+[  4063.854] (**) Option "_source" "_driver/libinput"
+[  4063.854] (II) libinput: vc4: is a virtual subdevice
+[  4063.855] (**) Option "config_info" "udev:/sys/devices/platform/soc/fef00700.hdmi/rc/rc0/input4/event3"
+[  4063.855] (II) XINPUT: Adding extended input device "vc4" (type: KEYBOARD, id 14)
+[  4063.855] (**) Option "xkb_model" "pc105"
+[  4063.855] (**) Option "xkb_layout" "gb"
+[  4063.855] (**) vc4: Applying InputClass "libinput keyboard catchall"
+[  4063.855] (II) Using input driver 'libinput' for 'vc4'
+[  4063.855] (II) systemd-logind: returning pre-existing fd for /dev/input/event4 13:68
+[  4063.855] (**) vc4: always reports core events
+[  4063.855] (**) Option "Device" "/dev/input/event4"
+[  4063.855] (**) Option "_source" "_driver/libinput"
+[  4063.855] (II) libinput: vc4: is a virtual subdevice
+[  4063.855] (**) Option "config_info" "udev:/sys/devices/platform/soc/fef05700.hdmi/rc/rc1/input5/event4"
+[  4063.855] (II) XINPUT: Adding extended input device "vc4" (type: KEYBOARD, id 15)
+[  4063.855] (**) Option "xkb_model" "pc105"
+[  4063.856] (**) Option "xkb_layout" "gb"
+[  4063.907] (**) Option "fd" "26"
+[  4063.907] (II) event5  - Logitech G203 LIGHTSYNC Gaming Mouse: device removed
+[  4063.908] (**) Option "fd" "29"
+[  4063.908] (**) Option "fd" "30"
+[  4063.908] (II) event0  - Dell KB216 Wired Keyboard: device removed
+[  4063.908] (**) Option "fd" "31"
+[  4063.908] (II) event1  - Dell KB216 Wired Keyboard System Control: device removed
+[  4063.908] (**) Option "fd" "32"
+[  4063.909] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device removed
+[  4063.909] (**) Option "fd" "33"
+[  4063.909] (**) Option "fd" "34"
+[  4063.909] (**) Option "fd" "29"
+[  4063.909] (II) event6  - Logitech G203 LIGHTSYNC Gaming Mouse Keyboard: device removed
+[  4063.909] (**) Option "fd" "33"
+[  4063.910] (II) event3  - vc4: device removed
+[  4063.910] (**) Option "fd" "34"
+[  4063.910] (II) event4  - vc4: device removed
+[  4063.918] (II) UnloadModule: "libinput"
+[  4063.918] (II) systemd-logind: not releasing fd for 13:68, still in use
+[  4063.918] (II) UnloadModule: "libinput"
+[  4063.918] (II) systemd-logind: not releasing fd for 13:67, still in use
+[  4063.918] (II) UnloadModule: "libinput"
+[  4063.919] (II) systemd-logind: not releasing fd for 13:70, still in use
+[  4063.919] (II) UnloadModule: "libinput"
+[  4063.919] (II) systemd-logind: releasing fd for 13:68
+[  4063.944] (II) UnloadModule: "libinput"
+[  4063.944] (II) systemd-logind: releasing fd for 13:67
+[  4063.968] (II) UnloadModule: "libinput"
+[  4063.968] (II) systemd-logind: releasing fd for 13:66
+[  4063.984] (II) UnloadModule: "libinput"
+[  4063.984] (II) systemd-logind: releasing fd for 13:65
+[  4064.000] (II) UnloadModule: "libinput"
+[  4064.000] (II) systemd-logind: releasing fd for 13:64
+[  4064.016] (II) UnloadModule: "libinput"
+[  4064.016] (II) systemd-logind: releasing fd for 13:70
+[  4064.037] (II) UnloadModule: "libinput"
+[  4064.037] (II) systemd-logind: releasing fd for 13:69
+[  4064.113] (II) Server terminated successfully (0). Closing log file.
